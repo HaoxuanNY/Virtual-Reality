@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Little House</title>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+  <a-scene>
+    <a-assets>
+      <img id="grass" src="grass.jpg">
+      <img id="sky" src="sky.jpg">
+    </a-assets>
+
+    <a-entity id="cottage-1" class="house" position="0 0 15" rotation="0 0 0">
+            <a-box class="wall" position="-1.5 1.5 2.5" width="2" height="3" depth="0.25" color="#F3D6AF"></a-box>
+            <a-box class="wall" position="1.5 1.5 2.5" width="2" height="3" depth="0.25" color="#F3D6AF"></a-box>
+            <a-box class="wall" position="0 2.75 2.5" width="1" height="0.5" depth="0.25" color="#F3D6AF"></a-box>
+            <a-box class="wall" position="0 1.5 -2.5" width="5" height="3" depth="0.25" color="#F3D6AF"></a-box>
+            <a-box class="wall" position="-2.5 1.5 0" width="0.25" height="3" depth="5" color="#F3D6AF"></a-box>
+            <a-box class="wall" position="2.5 1.5 0" width="0.25" height="3" depth="5" color="#F3D6AF"></a-box>
+            <a-box position="0 0.1 0" width="5" height="0.2" depth="5" color="#D9B99B"></a-box>
+    
+
+            <a-box position="0 1.4 2.5" width="1" height="2" depth="0.1" color="#754B39"></a-box>
+            <a-sphere position="0.3 1.4 2.7" radius="0.1" color="#F6CC65"></a-sphere>
+            <a-box position="0 0.25 3.5" width="2.5" height="0.5" depth="2" color="#D5C4AC"></a-box>
+            <a-box position="0 2.5 3.5" width="3" height="0.25" depth="2" color="#82583F"></a-box>
+            <a-cylinder position="-1 1.25 4" radius="0.1" height="2.5" color="white"></a-cylinder>
+            <a-cylinder position="1 1.25 4" radius="0.1" height="2.5" color="white"></a-cylinder>
+    
+
+            <!-- <a-entity position="0 0 -0.1">
+              <a-box position="-1.5 1.75 2.75" width="1.25" height="1.25" depth="0.1" color="white"></a-box>
+              <a-box position="-1.5 1.75 2.85" width="1" height="1" depth="0.1" color="#82CDEB"></a-box>
+              <a-box position="-1.5 1.75 2.95" width="0.1" height="1" depth="0.1" color="white"></a-box>
+              <a-box position="-1.5 1.75 2.95" width="1" height="0.1" depth="0.1" color="white"></a-box>
+              <a-box position="1.5 1.75 2.75" width="1.25" height="1.25" depth="0.1" color="white"></a-box>
+              <a-box position="1.5 1.75 2.85" width="1" height="1" depth="0.1" color="#82CDEB"></a-box>
+              <a-box position="1.5 1.75 2.9" width="0.1" height="1" depth="0.1" color="white"></a-box>
+              <a-box position="1.5 1.75 2.9" width="1" height="0.1" depth="0.1" color="white"></a-box>
+              <a-box position="-2.65 1.75 0" width="0.1" height="1.25" depth="1.5" color="#82CDEB"></a-box>
+              <a-box position="2.65 1.75 0" width="0.1" height="1.25" depth="1.5" color="#82CDEB"></a-box>
+            </a-entity> -->
+            <a-entity>
+              <a-box position="-1.5 1.75 2.63" width="1.25" height="1.25" depth="0.01" color="white"></a-box>
+              <a-box position="-1.5 1.75 2.64" width="1" height="1" depth="0.01" color="#82CDEB"></a-box>
+            </a-entity>
+            <a-entity>
+              <a-box position="1.5 1.75 2.63" width="1.25" height="1.25" depth="0.01" color="white"></a-box>
+              <a-box position="1.5 1.75 2.64" width="1" height="1" depth="0.01" color="#82CDEB"></a-box>
+            </a-entity>
+
+
+            <a-triangle position="0 0 2.5" vertex-a="-2.5 3 0" vertex-b="2.5 3 0" vertex-c="0 5 0" material="color: #F8E7CF; side: double"></a-triangle>
+            <a-triangle position="0 0 -2.5" vertex-a="-2.5 3 0" vertex-b="2.5 3 0" vertex-c="0 5 0" material="color: #F8E7CF; side: double"></a-triangle>
+            <a-box class="roof" position="-1.5 4 0" rotation="0 0 35" width="3.5" height="0.25" depth="6" color="#79527B"></a-box>
+            <a-box class="roof" position="1.5 4 0" rotation="0 0 -35" width="3.5" height="0.25" depth="6" color="#79527B"></a-box>
+            <a-box position="1.5 4.75 -1" width="0.75" height="1.5" depth="0.75" color="#9C6955"></a-box>
+            
+    
+   
+            
+
+
+    <a-sky src="#sky"></a-sky>
+    <a-entity camera look-controls wasd-controls="acceleration: 20" position="0 2 30"></a-entity>
+  </a-scene>
+
+</body>
+</html>
